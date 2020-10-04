@@ -7,7 +7,7 @@ services:
       - ./.env.docker
     volumes:
       - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
-      - media_data:/data/db
+      - data:/data/db
     ports:
       - 8004:27017
     networks:

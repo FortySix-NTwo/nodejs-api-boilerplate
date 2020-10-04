@@ -6,7 +6,11 @@
   "scripts": {
     "watch": "make watch",
     "develop": "make development",
-    "start": "node ."
+    "build": "make build",
+    "start": "node .",
+    "docker-dev": "make docker-dev",
+    "docker-prod": "make docker-prod",
+    "docker-build": "make docker-build"
   },
   "repository": {
     "type": "git",
