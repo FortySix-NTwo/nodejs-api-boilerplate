@@ -1,0 +1,38 @@
+# Dependency directories
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.development
+.env.production
+.env.test
+.env.docker.prod
+.env.docker.test
+.env.docker.dev
+.env.docker
+
+# VSCode
+.vscode
+.vscode-test
+
+# MacOS
+.DS_Store
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*

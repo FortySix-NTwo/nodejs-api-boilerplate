@@ -1,0 +1,21 @@
+version: '3.5'
+services:
+  media:
+    image: mongo:4.2.9-bionic
+    container_name: dev-mongo-db
+    env_file:
+      - ./.env.docker
+    volumes:
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - media_data:/data/db
+    ports:
+      - 8004:27017
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
+
+volumes:
+  data:
